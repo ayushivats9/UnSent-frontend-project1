@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Unsent</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+<!-- Top Navbar -->
+<nav class="navbar">
+  <div class="nav-right">
+    <button class="nav-btn" onclick="toggleSavedLetters()">
+      Saved Letters
+    </button>
+  </div>
+</nav>
+
+<!-- Saved Letters Panel -->
+<div id="saved-letters-panel">
+  <h3>Saved Letters</h3>
+  <ul id="letters-list"></ul>
+  <ul id="blank-list"></ul>
+</div>
+
+
+  <!-- Center Hero Section -->
+  <section class="hero">
+    <div class="logo">
+      <span class="plane">✈</span>
+      <h1 style="font-style:italic; color:crimson">
+  <span class="glow">UN</span>
+</h1>
+
+      <h1 style="color:bisque">-SENT</h1>
+    </div>
+    <p class="tagline">Where UNSAID Words LIVE!</p>
+  </section>
+
+  <!-- Template Section -->
+  <section class="templates">
+    <h2>Choose Your Space</h2>
+    <div class="template-buttons">
+  <button class="template-btn" onclick="openLetter()">
+    Letter Template
+  </button>
+
+ <button class="template-btn" onclick="openBlank()">
+  Blank Page
+</button>
+
+</div>
+
+  </section>
+  <div id="letter-modal" class="modal">
+  <div class="letter-paper" id="burn-paper">
+
+    <h3>Dear,</h3>
+    <div id="letter-scroll">
+    <textarea
+      id="letter-text"
+      placeholder="Write everything you never sent..."
+    ></textarea></div>
+
+    <div class="letter-actions">
+    <button onclick="addLetterPage()">+ Page</button>
+    <button onclick="saveLetter()">Save</button>
+    <button onclick="burnLetter()">Burn</button>
+    <button onclick="closeLetter()">Close</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- BLANK PAGE MODAL -->
+<div id="blank-modal">
+  <div class="blank-paper">
+    <div class="quiet-page">
+    <textarea
+      id="blank-text"
+      placeholder="It’s quiet here. Write anything..."
+    ></textarea></div>
+
+    <div class="blank-actions">
+    <button onclick="addBlankPage()">+ Page</button>
+
+      <button onclick="saveBlank()">Save</button>
+      <button onclick="burnBlankPage()">Burn</button>
+      <button onclick="closeBlank()">Close</button>
+    </div>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
