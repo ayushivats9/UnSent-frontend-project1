@@ -6,7 +6,7 @@ html, body {
 body {
   font-family: Arial, sans-serif;
   min-height: 100vh;
-  background-image: url("./images/background4.avif");
+  background-image: url("./images/background4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -150,7 +150,7 @@ body {
   background: #f0f0f0;
 }
 #burn-paper {
-  position: relative;
+  
   width: 420px;
   max-width: 90%;
   height: 80vh;                
@@ -173,7 +173,7 @@ body {
 #letter-scroll{
     flex:1;
     overflow-y: auto;
-    padding-bottom: 20px;
+    
 }
 
 .letter-actions {
@@ -243,7 +243,7 @@ body {
 }
 
 .blank-paper {
-  background-image: url("./images/background5.avif");
+  background-image: url("./images/background5.jpg");
   padding: 20px;
   border-radius: 15px;
   width: 65%;
@@ -279,10 +279,10 @@ body {
   cursor: pointer;
 }
 .quiet-page {
-  background-image: url("./images/background5.avif");
+  background-image: url("./images/background5.jpg");
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  min-height: auto;
   padding: 30px;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -300,4 +300,5 @@ body {
   font-family: "Comic Sans", cursive;
   font-size: 15px;
 }
+
 
