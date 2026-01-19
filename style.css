@@ -1,11 +1,15 @@
-body {
+html, body {
+  width: 100%;
+  height: 100%;
   margin: 0;
+}
+body {
   font-family: Arial, sans-serif;
+  min-height: 100vh;
   background-image: url("./images/background4.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1; 
 }
 @keyframes pulseGlow {
   0% {
@@ -278,7 +282,7 @@ body {
   background-image: url("./images/background5.avif");
   background-size: cover;
   background-position: center;
-
+  min-height: 100vh;
   padding: 30px;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -296,3 +300,4 @@ body {
   font-family: "Comic Sans", cursive;
   font-size: 15px;
 }
+
